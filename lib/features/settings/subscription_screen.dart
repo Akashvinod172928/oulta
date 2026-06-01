@@ -101,7 +101,7 @@ class SubscriptionScreen extends StatelessWidget {
               
               _buildTierCard(
                 title: 'Prime Impactist',
-                price: '₹399',
+                price: '₹349',
                 description: 'Driving real and consistent impact',
                 color: const Color(0xFFD4AF37), // Gold
                 isPrime: true,
