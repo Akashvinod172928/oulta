@@ -3,7 +3,7 @@ description: "A new Flutter project."
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.0+2
+version: 1.0.0+13
 
 environment:
   sdk: ^3.9.2
@@ -18,7 +18,17 @@ dependencies:
   firebase_core:
   cupertino_icons: ^1.0.8
   url_launcher:
-
+  shimmer: ^3.0.0 # Add shimmer dependency
+  intl:
+  shared_preferences:
+  image_picker: ^1.2.1
+  firebase_storage: ^13.0.5
+  share_plus: ^12.0.1
+  country_pickers: ^3.0.1
+  upgrader: ^12.3.0
+  supabase_flutter: ^2.12.0
+  flutter_svg: ^2.0.10
+  cached_network_image: ^3.4.1
 
 dev_dependencies:
   flutter_test:
@@ -38,3 +48,6 @@ flutter:
   assets:
     - assets/
     - assets/app_icon/
+    - assets/badges/
+    - assets/projects/
+    - assets/social_icons/

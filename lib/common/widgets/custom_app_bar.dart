@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:oulta/common/routes/routename.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
@@ -7,7 +9,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback? onTrailingIconPressed;
   final IconData? leadingIcon;
   final IconData? trailingIcon;
-  final bool hasActionButton; // 🔹 controls trailing action
+  final bool hasActionButton;
+  final bool hasLeadingButton;
+  final bool isDarkTheme;
+  final List<Widget>? extraActions;
 
   const CustomAppBar({
     super.key,
@@ -16,67 +21,92 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.onTrailingIconPressed,
     this.trailingIcon,
     this.leadingIcon,
-    this.hasActionButton = true, // 🔹 default: show trailing
+    this.hasActionButton = true,
+    this.hasLeadingButton = true,
+    this.isDarkTheme = false,
+    this.extraActions,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: preferredSize.height,
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          // Leading (default: back button)
-          Container(
-            width: 44,
-            height: 44,
-            decoration: const BoxDecoration(
-              shape: BoxShape.circle,
-              color: Color(0xFFF0F0F2),
-            ),
-            child: IconButton(
-              icon: Icon(
-                leadingIcon ?? Icons.arrow_back, // 🔹 default back
-                size: 28,
-                color: Colors.black,
-              ),
-              onPressed: onLeadingIconPressed ?? () => Get.back(),
+    final bgColor = isDarkTheme ? Colors.transparent : Colors.white;
+    final fgColor = isDarkTheme ? Colors.white : Colors.black;
+    final btnBgColor = isDarkTheme ? const Color(0xFF1E1E1E) : const Color(0xFFF0F0F2);
+
+    return Material(
+      color: bgColor,
+      child: AnnotatedRegion<SystemUiOverlayStyle>(
+        value: isDarkTheme ? SystemUiOverlayStyle.light : SystemUiOverlayStyle.dark,
+        child: SafeArea(
+          child: Container(
+            height: preferredSize.height,
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                // Leading (default: back button)
+                hasLeadingButton ?
+                Container(
+                  width: 44,
+                  height: 44,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: btnBgColor,
+                  ),
+                  child: IconButton(
+                    icon: Icon(
+                      leadingIcon ?? Icons.arrow_back,
+                      size: 28,
+                      color: fgColor,
+                    ),
+                    onPressed: onLeadingIconPressed ?? () => Get.back(),
+                  ),
+                )
+                    : const SizedBox(width: 44), // keep spacing
+
+                // Title
+                Text(
+                  title,
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600,
+                    color: fgColor,
+                  ),
+                ),
+
+                // Trailing actions and main trailing button
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    if (extraActions != null) ...[
+                      ...extraActions!,
+                      const SizedBox(width: 8),
+                    ],
+                    hasActionButton
+                        ? Container(
+                            width: 44,
+                            height: 44,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: btnBgColor,
+                            ),
+                            child: IconButton(
+                              padding: EdgeInsets.zero,
+                              icon: Icon(
+                                trailingIcon ?? Icons.settings,
+                                size: 22,
+                                color: fgColor,
+                              ),
+                              onPressed: onTrailingIconPressed ?? () => Get.toNamed(RouteName.settings),
+                            ),
+                          )
+                        : const SizedBox(width: 44), // keep spacing
+                  ],
+                ),
+              ],
             ),
           ),
-
-          // Title
-          Text(
-            title,
-            style: const TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w600,
-              color: Colors.black,
-            ),
-          ),
-
-          // Trailing (only if hasActionButton == true)
-          hasActionButton
-              ? Container(
-            width: 44,
-            height: 44,
-            decoration: const BoxDecoration(
-              shape: BoxShape.circle,
-              color: Color(0xFFF0F0F2),
-            ),
-            child: IconButton(
-              padding: EdgeInsets.zero,
-              icon: Icon(
-                trailingIcon ?? Icons.settings,
-                size: 22,
-                color: Colors.black,
-              ),
-              onPressed: onTrailingIconPressed ??
-                      () => debugPrint("Settings pressed"),
-            ),
-          )
-              : const SizedBox(width: 44), // keep spacing
-        ],
+        ),
       ),
     );
   }

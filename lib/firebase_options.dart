@@ -47,31 +47,32 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDOqeu_6sQCcWdyLqeN-oAmBbeKGzn7PT4',
-    appId: '1:761223518670:web:273adb0671120161da739f',
-    messagingSenderId: '761223518670',
-    projectId: 'shop-d9dbb',
-    authDomain: 'shop-d9dbb.firebaseapp.com',
-    storageBucket: 'shop-d9dbb.firebasestorage.app',
-    measurementId: 'G-0813GTHP57',
+    apiKey: 'AIzaSyC7_PliFUO95eqxSIQ0SNYtrWDpuDUPehQ',
+    appId: '1:976555914873:web:0afdf4826bacdce06786a8',
+    messagingSenderId: '976555914873',
+    projectId: 'beggy-work',
+    authDomain: 'beggy-work.firebaseapp.com',
+    storageBucket: 'beggy-work.firebasestorage.app',
+    measurementId: 'G-E3PMH4RQLZ',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAN7E5q-3c0Yg-sW9AhsTrU64XfsOrl9qM',
-    appId: '1:761223518670:android:7dd465b1dc2c009eda739f',
-    messagingSenderId: '761223518670',
-    projectId: 'shop-d9dbb',
-    storageBucket: 'shop-d9dbb.firebasestorage.app',
+    apiKey: 'AIzaSyBT4j74G2mPGZO47TGtVDtcC1JoxvzlgPQ',
+    appId: '1:976555914873:android:52f0518aa47a624e6786a8',
+    messagingSenderId: '976555914873',
+    projectId: 'beggy-work',
+    storageBucket: 'beggy-work.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAmjvf3yKn9A0ovWb_6jLp9zvLKYwPSz40',
-    appId: '1:761223518670:ios:2252f40325bf6235da739f',
-    messagingSenderId: '761223518670',
-    projectId: 'shop-d9dbb',
-    storageBucket: 'shop-d9dbb.firebasestorage.app',
-    androidClientId: '761223518670-2b11rnm8dm5448vcvr8ei3oir48tegfo.apps.googleusercontent.com',
-    iosClientId: '761223518670-041ptoagecj0gvqj3guudj8c70v3gsuc.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCYTB3EzpsGlzJ9lOtIpGZXfWlOGCdIjNg',
+    appId: '1:976555914873:ios:8f0d000f79fdb8606786a8',
+    messagingSenderId: '976555914873',
+    projectId: 'beggy-work',
+    storageBucket: 'beggy-work.firebasestorage.app',
+    androidClientId: '976555914873-1eq0p1u51k1rcb22nlg0f11osg5924dg.apps.googleusercontent.com',
+    iosClientId: '976555914873-p0v73nm2touje4fdq8jr3hneanqkdud4.apps.googleusercontent.com',
     iosBundleId: 'com.example.oulta',
   );
+
 }

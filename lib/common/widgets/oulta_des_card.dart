@@ -1,6 +1,3 @@
-
-import 'package:flutter/material.dart';
-
 import 'package:flutter/material.dart';
 
 class OultaDescCard extends StatelessWidget {
@@ -75,10 +72,7 @@ class OultaDescCard extends StatelessWidget {
             // Optional trailing icon (like arrow or info)
             if (trailingIcon != null) ...[
               const SizedBox(width: 12),
-              Icon(
-                trailingIcon,
-                color: Colors.grey[600],
-              ),
+              Icon(trailingIcon, color: Colors.grey[600]),
             ],
           ],
         ),

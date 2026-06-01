@@ -1,0 +1,87 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Allow any logged in user to read/write to the users collection
+    match /users/{userId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+      
+      // Allow read access to all sub-collections (badges, following, followers)
+      match /{document=**} {
+        allow read: if true;
+        allow write: if request.auth != null;
+      }
+    }
+    
+    // Posts collection
+    match /posts/{postId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+      
+      // Comments sub-collection
+      match /comments/{commentId} {
+        allow read: if true;
+        allow write: if request.auth != null;
+      }
+    }
+    
+    // Impact Stands collection
+    match /impact_stands/{standId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+      
+      // Comments sub-collection
+      match /comments/{commentId} {
+        allow read: if true;
+        allow write: if request.auth != null;
+      }
+    }
+
+    // Campaigns collection
+    match /campaigns/{campaignId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+      
+      // Comments sub-collection
+      match /comments/{commentId} {
+        allow read: if true;
+        allow write: if request.auth != null;
+      }
+    }
+    
+    // Requests and Suggestions (typically write-only for users, read for admins)
+    match /account_change_requests/{docId} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null; // Ideally restrict to owner or admin
+    }
+    
+    match /community_requests/{docId} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+    }
+    
+    match /idea_suggestions/{docId} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+    }
+    
+    match /reported_comments/{docId} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+    }
+    
+    // Activity tracking
+    match /activity/{userId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // Victory Stands collection
+    match /victory_stands/{victoryId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // --- Impact Stands (Images) ---
+    match /impact_stands/{allPaths=**} {
+      // For testing, anyone can read images. Only authenticated users can upload.
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+    
+    // --- Posts (Images, etc.) ---
+    match /posts/{allPaths=**} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+    
+    // --- User Profile Photos ---
+    match /users/{userId}/{allPaths=**} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // General fallback for all other files
+    match /{allPaths=**} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+  }
+}

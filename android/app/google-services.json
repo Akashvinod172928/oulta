@@ -1,48 +1,48 @@
 {
   "project_info": {
-    "project_number": "761223518670",
-    "project_id": "shop-d9dbb",
-    "storage_bucket": "shop-d9dbb.firebasestorage.app"
+    "project_number": "976555914873",
+    "project_id": "beggy-work",
+    "storage_bucket": "beggy-work.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:761223518670:android:4584f1961a45f35cda739f",
+        "mobilesdk_app_id": "1:976555914873:android:b97273bbd64aced06786a8",
         "android_client_info": {
-          "package_name": "com.example.admin_panel"
+          "package_name": "com.example.ocollabs"
         }
       },
       "oauth_client": [
         {
-          "client_id": "761223518670-kjc9eldttia3992akrdg2ddk8b3jrccq.apps.googleusercontent.com",
+          "client_id": "976555914873-1eq0p1u51k1rcb22nlg0f11osg5924dg.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.admin_panel",
-            "certificate_hash": "b9d1b62adfe1bfe2d1a187bf85ff3006e3d82192"
+            "package_name": "com.example.ocollabs",
+            "certificate_hash": "8b5dc85a40b7f71011b31c261c608aa3d810d044"
           }
         },
         {
-          "client_id": "761223518670-d7bs8cforkj1klqpf6rkaa9btrov59kc.apps.googleusercontent.com",
+          "client_id": "976555914873-mvf98mrk3su939di6mrajo4u3doqgn21.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAN7E5q-3c0Yg-sW9AhsTrU64XfsOrl9qM"
+          "current_key": "AIzaSyBT4j74G2mPGZO47TGtVDtcC1JoxvzlgPQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "761223518670-amh87uftt5413sulvkep7n6entbo9qbc.apps.googleusercontent.com",
+              "client_id": "976555914873-mvf98mrk3su939di6mrajo4u3doqgn21.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "761223518670-041ptoagecj0gvqj3guudj8c70v3gsuc.apps.googleusercontent.com",
+              "client_id": "976555914873-9ed9colupnso2pi96nf6terrdif9c9ju.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.oulta"
+                "bundle_id": "com.example.starFeast"
               }
             }
           ]
@@ -51,34 +51,34 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:761223518670:android:40221e02c7af4aabda739f",
+        "mobilesdk_app_id": "1:976555914873:android:b6d05543fec435646786a8",
         "android_client_info": {
-          "package_name": "com.example.flutter_application_1"
+          "package_name": "com.example.star_feast"
         }
       },
       "oauth_client": [
         {
-          "client_id": "761223518670-d7bs8cforkj1klqpf6rkaa9btrov59kc.apps.googleusercontent.com",
+          "client_id": "976555914873-mvf98mrk3su939di6mrajo4u3doqgn21.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAN7E5q-3c0Yg-sW9AhsTrU64XfsOrl9qM"
+          "current_key": "AIzaSyBT4j74G2mPGZO47TGtVDtcC1JoxvzlgPQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "761223518670-amh87uftt5413sulvkep7n6entbo9qbc.apps.googleusercontent.com",
+              "client_id": "976555914873-mvf98mrk3su939di6mrajo4u3doqgn21.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "761223518670-041ptoagecj0gvqj3guudj8c70v3gsuc.apps.googleusercontent.com",
+              "client_id": "976555914873-9ed9colupnso2pi96nf6terrdif9c9ju.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.oulta"
+                "bundle_id": "com.example.starFeast"
               }
             }
           ]
@@ -87,310 +87,34 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:761223518670:android:46d2f1790ebcb348da739f",
-        "android_client_info": {
-          "package_name": "com.example.kakaka"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "761223518670-2b11rnm8dm5448vcvr8ei3oir48tegfo.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.kakaka",
-            "certificate_hash": "b8d1f9108922d3b52e50b59a679aa11eb4d172d5"
-          }
-        },
-        {
-          "client_id": "761223518670-d7bs8cforkj1klqpf6rkaa9btrov59kc.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAN7E5q-3c0Yg-sW9AhsTrU64XfsOrl9qM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "761223518670-amh87uftt5413sulvkep7n6entbo9qbc.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "761223518670-041ptoagecj0gvqj3guudj8c70v3gsuc.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.oulta"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:761223518670:android:ca989af7bcba48c0da739f",
-        "android_client_info": {
-          "package_name": "com.example.new1"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "761223518670-d7bs8cforkj1klqpf6rkaa9btrov59kc.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAN7E5q-3c0Yg-sW9AhsTrU64XfsOrl9qM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "761223518670-amh87uftt5413sulvkep7n6entbo9qbc.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "761223518670-041ptoagecj0gvqj3guudj8c70v3gsuc.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.oulta"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:761223518670:android:40f6ba45b207f03fda739f",
-        "android_client_info": {
-          "package_name": "com.example.sm_admin"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "761223518670-d7bs8cforkj1klqpf6rkaa9btrov59kc.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAN7E5q-3c0Yg-sW9AhsTrU64XfsOrl9qM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "761223518670-amh87uftt5413sulvkep7n6entbo9qbc.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "761223518670-041ptoagecj0gvqj3guudj8c70v3gsuc.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.oulta"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:761223518670:android:cf0485d294c9915fda739f",
-        "android_client_info": {
-          "package_name": "com.example.sm_dummy"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "761223518670-d7bs8cforkj1klqpf6rkaa9btrov59kc.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAN7E5q-3c0Yg-sW9AhsTrU64XfsOrl9qM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "761223518670-amh87uftt5413sulvkep7n6entbo9qbc.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "761223518670-041ptoagecj0gvqj3guudj8c70v3gsuc.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.oulta"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:761223518670:android:0e6ed37a9973c50dda739f",
-        "android_client_info": {
-          "package_name": "com.example.sm_street_user"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "761223518670-d7bs8cforkj1klqpf6rkaa9btrov59kc.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAN7E5q-3c0Yg-sW9AhsTrU64XfsOrl9qM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "761223518670-amh87uftt5413sulvkep7n6entbo9qbc.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "761223518670-041ptoagecj0gvqj3guudj8c70v3gsuc.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.oulta"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:761223518670:android:5255befb5ffa9d1bda739f",
-        "android_client_info": {
-          "package_name": "com.example.sm_user"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "761223518670-d7bs8cforkj1klqpf6rkaa9btrov59kc.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAN7E5q-3c0Yg-sW9AhsTrU64XfsOrl9qM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "761223518670-amh87uftt5413sulvkep7n6entbo9qbc.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "761223518670-041ptoagecj0gvqj3guudj8c70v3gsuc.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.oulta"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:761223518670:android:729df1fe837b2010da739f",
+        "mobilesdk_app_id": "1:976555914873:android:52f0518aa47a624e6786a8",
         "android_client_info": {
           "package_name": "com.oulta.oulta"
         }
       },
       "oauth_client": [
         {
-          "client_id": "761223518670-d7bs8cforkj1klqpf6rkaa9btrov59kc.apps.googleusercontent.com",
+          "client_id": "976555914873-mvf98mrk3su939di6mrajo4u3doqgn21.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAN7E5q-3c0Yg-sW9AhsTrU64XfsOrl9qM"
+          "current_key": "AIzaSyBT4j74G2mPGZO47TGtVDtcC1JoxvzlgPQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "761223518670-amh87uftt5413sulvkep7n6entbo9qbc.apps.googleusercontent.com",
+              "client_id": "976555914873-mvf98mrk3su939di6mrajo4u3doqgn21.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "761223518670-041ptoagecj0gvqj3guudj8c70v3gsuc.apps.googleusercontent.com",
+              "client_id": "976555914873-9ed9colupnso2pi96nf6terrdif9c9ju.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.oulta"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:761223518670:android:1674cbfb351acdb3da739f",
-        "android_client_info": {
-          "package_name": "com.smstreet.sm_street_user"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "761223518670-ndcg0e9chjku8pbdhmssahirt9egecjo.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.smstreet.sm_street_user",
-            "certificate_hash": "b9d1b62adfe1bfe2d1a187bf85ff3006e3d82192"
-          }
-        },
-        {
-          "client_id": "761223518670-scv0laalji2v2knag2mv3govjn9nn9i2.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.smstreet.sm_street_user",
-            "certificate_hash": "8b5dc85a40b7f71011b31c261c608aa3d810d044"
-          }
-        },
-        {
-          "client_id": "761223518670-d7bs8cforkj1klqpf6rkaa9btrov59kc.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAN7E5q-3c0Yg-sW9AhsTrU64XfsOrl9qM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "761223518670-amh87uftt5413sulvkep7n6entbo9qbc.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "761223518670-041ptoagecj0gvqj3guudj8c70v3gsuc.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.oulta"
+                "bundle_id": "com.example.starFeast"
               }
             }
           ]

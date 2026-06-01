@@ -1,0 +1,43 @@
+{
+    "firestore": {
+        "rules": "firestore.rules"
+    },
+    "storage": {
+        "rules": "storage.rules"
+    },
+    "hosting": {
+        "public": "build/web",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "rewrites": [
+            {
+                "source": "**",
+                "destination": "/index.html"
+            }
+        ]
+    },
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "beggy-work",
+                    "appId": "1:976555914873:android:52f0518aa47a624e6786a8",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "beggy-work",
+                    "configurations": {
+                        "android": "1:976555914873:android:52f0518aa47a624e6786a8",
+                        "ios": "1:976555914873:ios:8f0d000f79fdb8606786a8",
+                        "web": "1:976555914873:web:0afdf4826bacdce06786a8"
+                    }
+                }
+            }
+        }
+    }
+}
